@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OneNoteConversionTool", "OneNoteConversionTool\OneNoteConversionTool.csproj", "{DF6EFEF6-1D0D-4B64-A425-0A3758F5C251}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OneNoteConversionToolUnitTest", "OneNoteConversionToolUnitTest\OneNoteConversionToolUnitTest.csproj", "{86E7B739-1687-4475-B5AD-3989380C204B}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "OneNoteConversionToolSetup", "OneNoteConversionToolSetup\OneNoteConversionToolSetup.vdproj", "{6C044E7D-E801-43FF-95B0-2A027AE5C83E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DF6EFEF6-1D0D-4B64-A425-0A3758F5C251}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF6EFEF6-1D0D-4B64-A425-0A3758F5C251}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF6EFEF6-1D0D-4B64-A425-0A3758F5C251}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF6EFEF6-1D0D-4B64-A425-0A3758F5C251}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86E7B739-1687-4475-B5AD-3989380C204B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86E7B739-1687-4475-B5AD-3989380C204B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86E7B739-1687-4475-B5AD-3989380C204B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86E7B739-1687-4475-B5AD-3989380C204B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C044E7D-E801-43FF-95B0-2A027AE5C83E}.Debug|Any CPU.ActiveCfg = Debug
+		{6C044E7D-E801-43FF-95B0-2A027AE5C83E}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
