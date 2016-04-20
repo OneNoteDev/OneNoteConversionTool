@@ -19,4 +19,4 @@ In order to compile, you will need:
 
 If you would like to add support for InDesign documents, you need to:
 - have Adobe InDesign installed
-- define INDESIGN_INSTALLED in the compiler options
+- define `INDESIGN_INSTALLED` in the compiler options
