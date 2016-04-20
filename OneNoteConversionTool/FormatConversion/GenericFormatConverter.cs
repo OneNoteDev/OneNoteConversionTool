@@ -9,20 +9,23 @@ using System.Text;
 using System.Web;
 using Ghostscript.NET.Rasterizer;
 using HtmlAgilityPack;
-using InDesign;
 using Microsoft.Office.Interop.PowerPoint;
 using Microsoft.Office.Interop.Word;
 using OneNoteConversionTool.FormatReaders;
 using OneNoteConversionTool.OutputGenerator;
 using OneNoteConversionTool.Properties;
-using InDesignApplication = InDesign.Application;
 using Image = System.Drawing.Image;
 using WordApplication = Microsoft.Office.Interop.Word.Application;
 using _WordApplication = Microsoft.Office.Interop.Word._Application;
 using _WordDocument = Microsoft.Office.Interop.Word._Document;
-using InDesignDocument = InDesign.Document;
 using Path = System.IO.Path;
 using System.Diagnostics.CodeAnalysis;
+
+#if INDESIGN_INSTALLED
+using InDesign;
+using InDesignApplication = InDesign.Application;
+using InDesignDocument = InDesign.Document;
+#endif
 
 namespace OneNoteConversionTool.FormatConversion
 {
@@ -186,6 +189,7 @@ namespace OneNoteConversionTool.FormatConversion
 		/// <returns></returns>
 		public virtual bool ConvertInDesignToOneNote(string inputFile, string outputDir)
 		{
+#if INDESIGN_INSTALLED
 			// get the file name
 			string inputFileName = Path.GetFileNameWithoutExtension(inputFile);
 
@@ -237,6 +241,9 @@ namespace OneNoteConversionTool.FormatConversion
 			note.AddPageContentAsHtmlBlock(pageId, htmlDoc.DocumentNode.OuterHtml);
 
 			return true;
+#else		
+			throw new NotImplementedException();
+#endif
 		}
 
 		/// <summary>
@@ -732,6 +739,7 @@ namespace OneNoteConversionTool.FormatConversion
 		}
 		#endregion
 
+#if INDESIGN_INSTALLED
 		#region InDesign Helper Methods
 		/// <summary>
 		/// Sets the export options of the indesign document to HTML
@@ -821,6 +829,7 @@ namespace OneNoteConversionTool.FormatConversion
 			return title.Trim();
 		}
 		#endregion
+#endif
 
 		#region ePub Helper Methods
 		/// <summary>
