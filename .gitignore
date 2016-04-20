@@ -11,31 +11,31 @@
 *.userprefs
 
 # Build results
-[Dd]ebug/
-[Dd]ebugPublic/
-[Rr]elease/
-[Rr]eleases/
-x64/
-x86/
-build/
-bld/
-[Bb]in/
-[Oo]bj/
+*/[Dd]ebug/
+*/[Dd]ebugPublic/
+*/[Rr]eleases/
+*/[Rr]elease/
+*/x64/
+*/x86/
+*/build/
+*/bld/
+*/[Bb]in/
+*/[Oo]bj/
 
 # Visual Studo 2015 cache/options directory
 .vs/
 
 # MSTest test Results
-[Tt]est[Rr]esult*/
-[Bb]uild[Ll]og.*
+*/[Tt]est[Rr]esult*/
+*/[Bb]uild[Ll]og.*
 
 # NUNIT
 *.VisualState.xml
 TestResult.xml
 
 # Build Results of an ATL Project
-[Dd]ebugPS/
-[Rr]eleasePS/
+*/[Dd]ebugPS/
+*/[Rr]eleasePS/
 dlldata.c
 
 *_i.c
@@ -129,7 +129,7 @@ publish/
 # Publish Web Output
 *.[Pp]ublish.xml
 *.azurePubxml
-# TODO: Comment the next line if you want to checkin your web deploy settings 
+# TODO: Comment the next line if you want to checkin your web deploy settings
 # but database connection strings (with potential passwords) will be unencrypted
 *.pubxml
 *.publishproj
@@ -194,3 +194,6 @@ FakesAssemblies/
 
 # Visual Studio 6 workspace options file
 *.opt
+
+# Others
+packages
